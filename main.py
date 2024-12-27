@@ -48,7 +48,7 @@ msg = "Your life in weeks"
 d = ImageDraw.Draw(img)
 fntSize = 100
 fnt = ImageFont.truetype("myFont.ttf", fntSize)
-w, h = d.textsize(msg, font=fnt)
+w = d.textlength(msg, font=fnt)
 d.text(((W - w) / 2, 5), msg, font=fnt, fill=(0, 0, 0))
 
 (coord1, coord2) = (25, 100)
